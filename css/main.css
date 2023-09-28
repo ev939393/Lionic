@@ -321,6 +321,7 @@ ul {
 }
 
 .clients__list-item {
+  display: flex;
   margin-bottom: 30px;
   padding: 51px 36px 32px;
   max-width: 370px;
@@ -340,6 +341,7 @@ ul {
 }
 
 .clients__list-bottom {
+  margin-top: auto;
   display: flex;
   align-items: center;
   border-top: 1px solid var(--color-mercury);
