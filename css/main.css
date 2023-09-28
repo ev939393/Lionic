@@ -197,7 +197,7 @@ ul {
 }
 
 .services {
-  padding-bottom: 160px;
+  padding-bottom: 130px;
   border-bottom: 1px solid var(--color-mercury);
 }
 
@@ -227,13 +227,12 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 57px 20px;
+  padding: 57px 20px 46px;
   border-radius: 5px;
   border: 1px solid #E4E4E4;
   height: 100%;
   overflow: hidden;
   text-align: center;
-  
 }
 
 .services__list-svg {
@@ -256,12 +255,12 @@ ul {
 }
 
 .articles {
-  padding-bottom: 160px;
+  padding-bottom: 132px;
   border-bottom: 1px solid var(--color-mercury);
 }
 
 .articles__title {
-  margin: 42px 0;
+  margin: 0 0 41px;
 }
 
 .articles__list {
@@ -272,15 +271,15 @@ ul {
 
 .articles__list-item {
   display: flex;
-  margin-bottom: 30px;
-  max-width: 570px;
+  margin-bottom: 27px;
+  width: 571px;
   border-radius: 5px;
   border: 1px solid var(--color-mercury);
   overflow: hidden;
 }
 
 .articles__list-content {
-  padding: 23px 30px 38px;
+  padding: 19px 30px 20px;
 }
 
 .articles__list-date {
@@ -299,6 +298,7 @@ ul {
 }
 
 .articles__list-descr {
+  max-width: 230px;
   color: var(--color-boulder);
   font-size: 14px;
   font-weight: 400;
@@ -321,7 +321,7 @@ ul {
 
 .clients__list-item {
   margin-bottom: 30px;
-  padding: 51px 36px 32px;
+  padding: 37px 47px 30px 34px;
   max-width: 370px;
   border-radius: 5px;
   border: 1px solid var(--color-mercury);
@@ -342,7 +342,8 @@ ul {
   display: flex;
   align-items: center;
   border-top: 1px solid var(--color-mercury);
-  padding-top: 28px;
+  padding-top: 46px;
+  padding-left: 7px;
 }
 
 .clients__list-img-wrap {
@@ -370,11 +371,13 @@ ul {
 }
 
 .contacts {
-  padding-bottom: 160px;
+  /* padding-top: 0; */
+  padding-bottom: 129px;
   border-bottom: 1px solid var(--color-mercury);
 }
 
 .contacts__title {
+  padding-top: 58px;
   margin-bottom: 109px;
 }
 
@@ -385,7 +388,7 @@ ul {
 
 .contacts__list-item {
   margin-bottom: 30px;
-  padding-top: 48px;
+  padding-top: 53px;
   width: 370px;
   background-position: top left;
   background-size: 29px 29px;
@@ -409,7 +412,7 @@ ul {
 }
 
 .contacts__list-title {
-  margin: 0 0 30px;
+  margin: 0 0 37px;
   color: var(--color-cod-gray);
   font-size: 17px;
   font-weight: 600;
@@ -431,7 +434,7 @@ ul {
 }
 
 .join-us__title {
-  margin: 0 0 22px;
+  margin: 0 0 24px;
   text-align: center;
 }
 
@@ -456,10 +459,10 @@ ul {
 }
 
 .form__input {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   border-radius: 50px;
   border: 1px solid var(--color-alto);
-  padding: 15px 28px;
+  padding: 21px 28px;
   width: 251px;
   color: var(--color-boulder);
   font-size: 16px;
@@ -477,7 +480,7 @@ ul {
   resize: none;
   border-radius: 20px;
   border: 1px solid var(--color-alto);
-  padding: 15px 28px;
+  padding: 22px 28px;
   color: var(--color-boulder);
   font-size: 16px;
   font-weight: 400;
@@ -497,7 +500,7 @@ ul {
 
 .form__btn {
   margin-bottom: 9px;
-  padding: 15px 0;
+  padding: 18px 0;
   border: none;
   border-radius: 50px;
   width: 230px;
@@ -580,7 +583,7 @@ ul {
 }
 
 .footer__list-social-item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 26px;
   width: 24px;
   height: 24px;
 }
