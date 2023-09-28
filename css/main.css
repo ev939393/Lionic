@@ -322,6 +322,7 @@ ul {
 
 .clients__list-item {
   display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
   padding: 51px 36px 32px;
   max-width: 370px;
