@@ -149,8 +149,6 @@ ul {
 }
 
 .header__nav-link:hover {
-  outline-offset: 3px;
-  outline: 1px solid var(--color-havelock-blue);
   color: var(--color-havelock-blue);
 }
 
