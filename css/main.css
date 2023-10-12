@@ -114,15 +114,13 @@ ul {
 
 .header__nav {
   display: flex;
+  gap: 54px;
 }
 
 .header__nav-list {
   display: flex;
   align-items: center;
-}
-
-.header__nav-item:not(:last-child) {
-  margin-right: 53px;
+  gap: 53px;
 }
 
 .header__nav-link {
@@ -163,7 +161,6 @@ ul {
 
 .header__btn {
   position: relative;
-  margin-left: 54px;
   padding: 16px 35px;
   border-radius: 3px;
   font-size: 15px;
@@ -310,17 +307,15 @@ ul {
 }
 
 .services__list {
+  --services-gap: 30px;
+  --services-offsets: 3;
   display: flex;
   flex-wrap: wrap;
+  gap: var(--services-gap);
 }
 
 .services__list-item {
-  max-width: 270px;
-  margin-bottom: 30px;
-}
-
-.services__list-item:not(:nth-child(4n)) {
-  margin-right: 30px;
+  width: calc((100% - (var(--services-offsets) * var(--services-gap))) / (var(--services-offsets) + 1));
 }
 
 .services__list-link {
@@ -386,6 +381,7 @@ ul {
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
+  text-align: center;
   transition: color .2s;
 }
 
@@ -403,19 +399,21 @@ ul {
 }
 
 .articles__title {
-  margin: 42px 0;
+  margin: 0 0 42px ;
 }
 
 .articles__list {
+  --articles-gap: 30px;
+  --articles-offsets: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: var(--articles-gap);
 }
 
 .articles__list-item {
   display: flex;
-  margin-bottom: 30px;
-  max-width: 570px;
+  width: calc((100% - (var(--articles-gap) * var(--articles-offsets))) / (var(--articles-offsets) + 1));
 }
 
 .articles__list-link {
@@ -516,23 +514,22 @@ ul {
 }
 
 .clients__list {
+  --clients-gap: 30px;
+  --clients-offsets: 2;
   display: flex;
   flex-wrap: wrap;
+  gap: var(--clients-gap);
 }
 
 .clients__list-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
   padding: 51px 36px 32px;
-  max-width: 370px;
   border-radius: 5px;
   border: 1px solid var(--color-mercury);
+  width: calc((100% - (var(--clients-gap) * var(--clients-offsets))) / (var(--clients-offsets) + 1));
 }
 
-.clients__list-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
 
 .clients-list-descr {
   color: var(--color-boulder);
@@ -583,21 +580,19 @@ ul {
 }
 
 .contacts__list {
+  --contacts-gap: 30px;
+  --contacts-offsets: 2;
   display: flex;
   flex-wrap: wrap;
+  gap: var(--contacts-gap);
 }
 
 .contacts__list-item {
-  margin-bottom: 30px;
   padding-top: 48px;
-  width: 370px;
+  width: calc((100% - (var(--contacts-gap) * var(--contacts-offsets))) / (var(--contacts-offsets) + 1));
   background-position: top left;
   background-size: 29px 29px;
   background-repeat: no-repeat;
-}
-
-.contacts__list-item:not(:nth-child(3n)) {
-  margin-right: 30px;
 }
 
 .contacts__list-item-address {
@@ -662,27 +657,34 @@ ul {
 }
 
 .form {
+  --form-gap: 19px;
+  display: flex;
+  flex-direction: column;
   padding: 0 55px;
+  gap: var(--form-gap);
 }
 
 .form__top {
   display: flex;
-  justify-content: space-between;
+  gap: var(--form-gap);
+  --form-top-offsetss: 1;
 }
 
 .form__left {
+  --form-left-offsets: 1;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 49%;
+  gap: var(--form-gap);
+  width: calc((100% - (var(--form-top-offsetss) * var(--form-gap))) / (var(--form-top-offsetss) + 1));
+
 }
 
 .form__input {
-  margin-bottom: 19px;
+  display: block;
   border-radius: 50px;
   border: 1px solid var(--color-alto);
   padding: 15px 28px;
-  width: 251px;
+  width: calc((100% - (var(--form-left-offsets) * var(--form-gap))) / (var(--form-left-offsets) + 1));
   color: var(--color-boulder);
   font-size: 16px;
   font-weight: 400;
@@ -706,8 +708,7 @@ ul {
 }
 
 .form__right {
-  margin-bottom: 19px;
-  width: 49%;
+  width: calc((100% - (var(--form-top-offsetss) * var(--form-gap))) / (var(--form-top-offsetss) + 1));
 }
 
 .form__texarea {
@@ -865,16 +866,13 @@ ul {
 .footer__nav-list {
   display: flex;
   margin-right: 56px;
+  gap: 28px;
 }
 
 .footer__nav-item {
   color: var(--color-boulder);
   font-size: 15px;
   font-weight: 600;
-}
-
-.footer__nav-item:not(:last-child) {
-  margin-right: 28px;
 }
 
 .footer__nav-link:focus {
@@ -884,6 +882,7 @@ ul {
 
 .footer__list-social {
   display: flex;
+  gap: 32px;
 }
 
 .footer__list-social-item {
@@ -892,10 +891,6 @@ ul {
   justify-content: center;
   width: 24px;
   height: 24px;
-}
-
-.footer__list-social-item:not(:last-child) {
-  margin-right: 32px;
 }
 
 .footer__list-social-link {
