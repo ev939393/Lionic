@@ -94,17 +94,19 @@ ul {
 
 .header {
   padding: 29px 0;
+  border-bottom: 1px solid var(--color-mercury);
 }
 
 .header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 52px;
 }
 
 .header__logo-link {
   display: block;
-  max-height: 44px;
+  margin-right: auto;
+  height: 44px;
 }
 
 .header__logo-link:focus {
@@ -199,6 +201,20 @@ ul {
 
 .header__btn:active::before {
   opacity: 0;
+}
+
+.burger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-astral);
+  border-radius: 3px;
+  padding: 6px;
+  background: none;
+}
+
+.burger-svg {
+  fill: var(--color-astral);
 }
 
 .hero {
@@ -937,4 +953,24 @@ ul {
   .hero {
     background-image: url("../assets/img/hero-bg@2x.jpg");
   }
+}
+
+@media (max-width: 1024px) {
+  .header__nav-list {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .services__list {
+    --services-offsets: 2;
+  }
+
+  .footer__container {
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+
 }
